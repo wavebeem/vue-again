@@ -97,10 +97,16 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 
+/**
+ * Hello World
+ */
 export default defineComponent({
   name: "HelloWorld",
   props: {
-    msg: String
+    msg: {
+      type: String,
+      required: true
+    }
   }
 });
 </script>
